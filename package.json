@@ -1,0 +1,25 @@
+{
+  "name": "tokyo-safari",
+  "version": "1.0.0",
+  "description": "+ sassのコンパイル\r + sassによるwebデザイン\r + 教科書に則って行う。",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass --include-path scss scss/style.scss htdocs/css/style.css",
+    "build": "node-sass --include-path scss scss/style.scss htdocs/css/style.css --output-style compressed",
+    "watch": "node-sass --include-path scss scss/style.scss htdocs/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Narita-1095305/sass_tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Narita-1095305/sass_tutorial/issues"
+  },
+  "homepage": "https://github.com/Narita-1095305/sass_tutorial#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8"
+  }
+}
